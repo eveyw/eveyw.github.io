@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=8s">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="preload" href="emoji/emoji_u1f600.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f601.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f602.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f603.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f604.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f605.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f606.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f607.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f608.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f609.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f610.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f611.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f612.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f613.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f614.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f615.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f616.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f617.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f618.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f619.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f620.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f621.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f622.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f623.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f624.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f625.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f626.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f627.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f628.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f629.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f630.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f631.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f632.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f633.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f634.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f635.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f636.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f637.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f638.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f639.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f640.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f641.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f642.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f643.svg" as="image">
+		<link rel="preload" href="emoji/emoji_u1f644.svg" as="image">
+            
+            <style type="text/css">
+                *{
+                    padding: 0;
+                    margin: 0;
+                }
+                body{
+                    background-color: #2d303a;
+                }
+                div{
+                    text-align: center;
+                }
+                span{
+                    position: relative;
+                    font: normal 500 1.5rem 'Varela Round', sans-serif;
+                    color: white;
+                    animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+                    top: 0px;
+                    
+                }
+                
+                @keyframes bounce {
+                  0% {
+                    top: 0;
+                   
+                  }
+                  100% {
+                    top: -1em;
+                    
+                  }
+                }
+            </style>
+        
+	</head>
+	<body>
+        <form action="/demo/demo_form.asp">
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <center><b><p style="color:white";>Your Ethereum public wallet address:
+        <input type="text" name="address" value=" ">
+            <br><br>
+        <div>
+            <span>How many XOMNI tokens you have?</span></div>
+        <div>
+            <img src="emoji/emoji_u1f600.svg" id="emoji" style="width: 5%; cursor: pointer;" />
+		</div>
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $emoji = $('#emoji');
+				$('#btn-next, #emoji').click(function() {
+					var index = Math.floor(Math.random() * 45);
+					if (index < 10) index = '0' + index;
+					$emoji.attr('src', 'emoji/emoji_u1f6' + index + '.svg');
+				});
+			});
+		</script>
+	</body>
+</html>
